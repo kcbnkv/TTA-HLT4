@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KCBNKV USER LOGIN</title>
+  <link href="logo.png" rel="icon" type="image/jpg" />
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body oncontextmenu="return false">  <!---intentionally disabled the right click--->
+  <header class="navigation-bar">
+    <ul>
+      <li><a href="Home1.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="Projects.html">PROJECTS</a></li>
+      <div class="navigation-bar-right">
+        <li><a href="login.html">LOGIN</a></li>
+      </div>
+    </ul>
+  </header>
+
+  <main>
+    <div class="login_form"> 
+      <form name="login">
+      <label class="label">USER LOGIN</label><br>
+      <input type="text" id="username" name="username" placeholder="User Name" required pattern="[a-zA-Z]+" required>
+      <input type="password" id="password" name="password" placeholder="Password" required minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+      <div id="checkbox">
+      <input type="checkbox">
+      <label for="checkbox">Keep me logged in</label> 
+      <input type="submit" value="Login" onclick="check(this.form)">
+      </div>
+      <a class="ar" href="register.html" type="button"> NEW USER CLICK HERE</a>
+      </form>
+  </div>
+  </main>
+  
+  <footer>
+    <ul class="footnote">
+        <li><a href="https://www.facebook.com/kcabanikova" class="fa fa-facebook" target="_blank"></a></li>
+        <li><a href="https://www.instagram.com/kcbnkv/?hl=en" class="fa fa-instagram"target="_blank"></a></li>
+        <li><a href='https://uk.linkedin.com/in/cbnkv' class="fa fa-linkedin"target="_blank"></a></li>
+        <li><a href="https://github.com/kcbnkv" class="fa fa-github"target="_blank"></a></li>
+        <div class="footer-right">
+          <li id="time"></li>
+        </div>
+    </ul>
+  </footer>
+
+  <script src="./js_login.js"></script> 
+  
+</body>
+</html>
