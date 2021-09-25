@@ -39,7 +39,8 @@ function display_time() {
     var dt=x.getDate().toString();
     dt=dt.length==1 ? 0+dt : dt;
     
-    var x1=month + "/" + dt + "/" + x.getFullYear(); 
+    var x1=dt + "/" + month + "/" + x.getFullYear();
+//     var x1=month + "/" + dt + "/" + x.getFullYear(); month first, followed by day.
     x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById('time').innerHTML = x1;
     display_c7();
